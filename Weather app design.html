@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint"content="width=device-width,initial scale=1.0">
+        <title>Weather Application</title>
+        <style>
+            body{
+                font-family: arial,sans-serif;
+                background-color: #d6e6f3;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .weather-app{
+                background-color: #b8b1af;
+                padding: 20px;
+                width: 600px;
+                border-radius: 15px;
+                text-align: center;
+                box-shadow: 0 0 15px rgba(0,0,0,0,2);
+            }
+            h1{
+                color: #5a442e;
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            .search-box{
+                margin-bottom: 20px;
+            }
+            .search-box input{
+                padding: 10px;
+                width: 70%;
+                border: none;
+                border-radius: 5px;
+                box-shadow: 0px 2px 4px rgba(0,0,0,0,1);
+            }
+            .search-box button{
+                padding: 10px;
+                border: none;
+                background-color: #6c187d;
+                color: white;
+                border-radius: 5px;
+                cursor: pointer;
+                box-shadow: 0px 2px 4px rgba(0,0,0,0,1);
+            }
+            .weather-info h2{
+                font-size: 30px;
+                color: #333;
+                margin-bottom: 10px;
+            }
+            .current-weather p{
+                color: #333;
+                margin: 5px 0;
+                font-size: 14px;
+            }
+            .current-weather h1{
+                font-size: 50px;
+                color: black;
+                margin-top: 10px;
+            }
+            .forecast{
+                display: flex;
+                justify-content: space-around;
+                margin-top: 20px;
+                padding: 0 15px;
+            }
+            .day{
+                text-align: center;
+                color: #333;
+            }
+            .day img{
+                width: 35px;
+            }
+            .day p{
+                font-size: 16px;
+                font-weight: bold;
+                color: purple;
+                margin-top: 5px;
+            }
+            .day .dim-temp{
+                color: rgb(161, 70, 161);/*Dimmed temperature*/
+                font-weight: normal;
+            }
+            footer{
+                margin-top: 20px;
+                font-size: 12px;
+                color: #555;
+                border-top: 1px solid #999;
+                padding-top: 10px;
+            }
+            footer a{
+                text-decoration: none;
+                color: #6c187d;
+                font-weight: bold;
+            }
+            footer a:hover{
+                text-decoration: underline;
+            }
+        </style>
+    </head>
+   <body> 
+        <div class="weather-app">
+            <h1>Welcome to our weather application</h1>
+            <div class="search-box"> 
+                <input type="text" placeholder="Enter city name">
+                <button>SEARCH</button>
+            </div>
+            <div class="weather-info"><h2>Paris</h2>
+                <div class="current-weather">
+                    <P>Tuesday 14:40, scattered clouds</P>
+                    <p>Humidity: 66,Wind Speed:4.3</p>
+                    <h1>☁12°C</h1>
+                    </div>
+            </div>
+            <div class="forecast">
+                <div class="day">Mon<img src="cloud.png" alt="Cloudy"><p>15°<span class="dim-temp"> 19°</span> </p></div> 
+                <div class="day">Tue<img src="cloud.png" alt="Cloudy"><p>15°<span class="dim-temp"> 19°</span></p></div> 
+                <div class="day">Wed<img src="cloud.png" alt="Cloudy"><p>15°<span class="dim-temp"> 19°</span></p></div> 
+                <div class="day">Thur<img src="cloud.png" alt="Cloudy"><p>15°<span class="dim-temp"> 19°</span></p></div> 
+                <div class="day">Fri<img src="cloud.png" alt="Cloudy"><p>15°<span class="dim-temp"> 19°</span></p></div> 
+                <div class="day">Sat<img src="cloud.png" alt="Cloudy"><p>15°<span class="dim-temp"> 19°</span></p></div> 
+                <div class="day">Sun<img src="cloud.png" alt="Cloudy"><p>15°<span class="dim-temp"> 19°</span></p></div> 
+            </div>
+            <footer>
+                <p> Coded by <a href="#">Sharon Ayado</a> and is on <a href="#">Github</a> and hosted by <a href="#">Netlify</a>. <br>The design was done using <a href="#">Figma</a>.</p>
+            </footer>
+        </div>
+   </body>
+</html>
